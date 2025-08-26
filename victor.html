@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Joyeux anniversaire Victor!</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Griffy&display=swap');
+    
+    body {
+      margin: 0;
+      font-family: "Griffy", system-ui;
+      text-align: center;
+      animation: bg-change 7s infinite;
+    }
+
+    /* Animation du background */
+    @keyframes bg-change {
+      0%   { background: #ff0000; }  /* rouge */
+      14%  { background: #ff7f00; }  /* orange */
+      28%  { background: #ffff00; }  /* jaune */
+      42%  { background: #00ff00; }  /* vert */
+      57%  { background: #0000ff; }  /* bleu */
+      71%  { background: #4b0082; }  /* indigo */
+      85%  { background: #8f00ff; }  /* violet */
+      100% { background: #ff0000; }  /* retour rouge */
+    }
+
+    .video-container {
+      position: relative;
+      padding-bottom: 56.25%; /* ratio 16:9 */
+      height: 0;
+      overflow: hidden;
+    }
+
+    .video-container iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: 0;
+    }
+
+    img {
+      max-width: 90%;
+      height: auto;
+      margin: 10px auto;
+      display: block;
+    }
+
+    h1 {
+      font-size: 1.5rem;
+      margin: 20px 10px;
+      color: white;
+      text-shadow: 2px 2px 5px black;
+    }
+
+    @media (min-width: 600px) {
+      h1 {
+        font-size: 2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="video-container">
+    <iframe src="rickroll.mp4"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen>
+    </iframe>
+  </div>
+
+  <div class="victor">
+    <img src="victor.png" alt="Victor">
+  </div>
+
+  <div class="beau">
+    <h1>Trop beau! 😎</h1>
+  </div>
+
+  <div class="victor">
+    <img src="screen.png" alt="Capture d'écran">
+  </div>
+
+  <div class="kdo">
+    <h1>Ton 🎁 arrive mon 🐇</h1>
+  </div>
+
+  <div class="chair">
+    <img src="https://cdn.shopify.com/s/files/1/0731/2264/4277/files/hbadap2airergnomicofficechair-6.png?v=1748156804" alt="Chaise cadeau">
+  </div>
+
+  <div class="victor">
+    <img src="dhl.png" alt="DHL logo">
+  </div>
+</body>
+</html>
